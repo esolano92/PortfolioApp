@@ -1,11 +1,48 @@
+# === Python / Flask ===
+
+# Virtual environments (common names)
 venv/
-.env
+.venv/
+Lib/
+Scripts/
+pyvenv.cfg
+
+# Bytecode and cache
 __pycache__/
 *.py[cod]
 *$py.class
 
-instance/
+# Environment variables
+.env
+
+# SQLite and instance folders
 *.sqlite3
+instance/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# === Node / Vite (frontend) ===
+
+# Dependency folders
+frontend/node_modules/
+frontend/dist/
+
+# Vite/React build artifacts
+frontend/.vite/
+frontend/.parcel-cache/
+
+# Env files
+frontend/.env
+frontend/.env.*.local
+
+# === OS-specific ===
+
+.DS_Store
+Thumbs.db
+
+# === Editor configs ===
 
 .vscode/
 .idea/
