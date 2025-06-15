@@ -17,7 +17,7 @@ function Welcome() {
               </div>
               <div className="flip-card-back">
                 <img
-                  src="/images/deckys.png"
+                  src="/images/USNavylogo.png"
                   alt="Profile Back"
                   className="img-fluid rounded-circle shadow"
                   style={{ width: "200px", height: "200px", objectFit: "cover" }}
