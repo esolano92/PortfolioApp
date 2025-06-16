@@ -22,9 +22,9 @@ with app.app_context():
     db.create_all()
 
 # Check if Flask backend is working
-# @app.route('/')
-# def home():
-#     return jsonify(message="Flask is working!")
+@app.route('/')
+def home():
+    return jsonify(message="Flask is working!")
 
 # Create a route that only accepts POST methods
 @app.route('/add-project', methods=['POST'])
