@@ -22,6 +22,7 @@ with app.app_context():
     db.create_all()
 
 # Check if Flask backend is working
+# Trigger redeploy
 @app.route('/')
 def home():
     return jsonify(message="Flask is working!")
