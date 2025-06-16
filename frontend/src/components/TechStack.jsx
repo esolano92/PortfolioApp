@@ -1,13 +1,13 @@
 function TechStack() {
   const techLogos = [
-    { src: "/images/python.jpg", alt: "Python" },
-    { src: "/images/javascript.png", alt: "JavaScript" },
-    { src: "/images/vite.svg", alt: "React" },
-    { src: "/images/flask.png", alt: "Flask" },
-    { src: "/images/postgres.png", alt: "PostgreSQL" },
-    { src: "/images/docker.png", alt: "Docker" },
-    { src: "/images/aws.png", alt: "AWS" },
-    { src: "/images/googlecloud.png", alt: "Google Cloud" },
+    { src: "./images/python.jpg", alt: "Python" },
+    { src: "./images/javascript.png", alt: "JavaScript" },
+    { src: "./images/vite.svg", alt: "React" },
+    { src: "./images/flask.png", alt: "Flask" },
+    { src: "./images/postgres.png", alt: "PostgreSQL" },
+    { src: "./images/docker.png", alt: "Docker" },
+    { src: "./images/aws.png", alt: "AWS" },
+    { src: "./images/googlecloud.png", alt: "Google Cloud" },
 
 
   ];

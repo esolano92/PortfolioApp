@@ -9,7 +9,7 @@ function Welcome() {
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img
-                  src="/images/profilelogo.jpg"
+                  src="./images/profilelogo.jpg"
                   alt="Profile Front"
                   className="img-fluid rounded-circle shadow"
                   style={{ width: "200px", height: "200px", objectFit: "cover" }}
@@ -17,7 +17,7 @@ function Welcome() {
               </div>
               <div className="flip-card-back">
                 <img
-                  src="/images/USNavylogo.png"
+                  src="./images/USNavylogo.png"
                   alt="Profile Back"
                   className="img-fluid rounded-circle shadow"
                   style={{ width: "200px", height: "200px", objectFit: "cover" }}
