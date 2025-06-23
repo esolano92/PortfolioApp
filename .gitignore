@@ -17,7 +17,7 @@ backend/instance/
 backend/*.sqlite3
 backend/*.db
 backend/.env
-backend/.env.prodution
+backend/.env.production
 
 # Flask specific
 backend/*.pid

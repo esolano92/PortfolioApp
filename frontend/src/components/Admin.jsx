@@ -16,7 +16,7 @@ function Admin({goBack}) {
         event.preventDefault();
 
         // Sends a POST request to Flask and store the response object.
-        const response = await fetch("http://localhost:5000/add-project", {
+        const response = await fetch("https://portfolioapp-u2v6.onrender.com/add-project", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData)
