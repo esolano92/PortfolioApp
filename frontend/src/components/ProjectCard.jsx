@@ -2,7 +2,8 @@ function ProjectCard({project}) {
     // Prop used for html 
     const {title, description, github_url, tech_stack, image_url} = project;
 
-     
+    const BASE_URL = "https://esolano92.github.io/PortfolioApp/images/";
+
 
     // Function to handle the github button
     const handleGithubBtn = () => {
@@ -14,7 +15,7 @@ function ProjectCard({project}) {
         <div className="card h-100">
             <img 
             className="card-img-top"
-            src={image_url}
+            src={`${BASE_URL}{image_url}`}
             alt={title}/>
             
             <div className="card-body d-flex flex-column">
