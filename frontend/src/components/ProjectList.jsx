@@ -7,13 +7,19 @@ function ProjectList() {
     // Function setProject updates it
     const [project, setProject] = useState([]);
 
+    const baseURL = import.meta.env.VITE_API_URL || 
+      (window.location.hostname === "localhost"
+        ? "http://localhost:5000"
+        : "https://portfolioapp-u2v6.onrender.com");
+
+
     // useEffect runs the function inside once (componentMount)
     useEffect(() => {
         // Asynchronous function that fetches project data from Flask
         const fetchProjects = async () => {
             try {
                 // Sends a get request to Flask and stores the response
-                const response = await fetch('http://localhost:5000/get_projects');
+                const response = await fetch(`${baseURL}/get_projects`);
                 // Parses the response JSON and saves it to data
                 const data = await response.json();
                 console.log('Fetched projects:', data);

@@ -7,8 +7,11 @@ import logging
 
 load_dotenv()
 
+if os.environ.get("FLASK_ENV") == 'production':
+    load_dotenv(dotenv_path=".env.production")
+
 app = Flask(__name__, template_folder='templates')
-CORS(app)
+CORS(app, origins=['http://esolano92.github.io'])
 
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
